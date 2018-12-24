@@ -14,10 +14,10 @@ import javax.validation.constraints.NotNull;
 public class PurchaseDTO extends AbstractDTO {
 
     @NotNull
-    private final Status status;
+    private Status status;
 
     @NotNull
-    private final List<OrderProductDTO> orders;
+    private List<OrderProductDTO> orders;
 
     @Builder
     public PurchaseDTO(Long id,

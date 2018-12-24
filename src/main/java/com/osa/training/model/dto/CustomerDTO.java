@@ -15,15 +15,15 @@ import javax.validation.constraints.NotNull;
 public class CustomerDTO extends AbstractDTO {
 
     @NotNull
-    private final String firstName;
+    private String firstName;
     @NotNull
-    private final String lastName;
+    private String lastName;
     @NotNull
-    private final LocalDate dateOfBirth;
+    private LocalDate dateOfBirth;
     @NotNull
-    private final ContactData contactData;
+    private ContactData contactData;
 
-    private final Set<PurchaseDTO> purchases;
+    private Set<PurchaseDTO> purchases;
 
     @Builder
     public CustomerDTO(Long id,

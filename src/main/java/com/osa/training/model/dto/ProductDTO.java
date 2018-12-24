@@ -14,16 +14,16 @@ import javax.validation.constraints.Size;
 public class ProductDTO extends AbstractDTO {
 
     @NotNull
-    private final String name;
+    private String name;
     @NotNull
     @Size(max = 100)
-    private final BigDecimal marge;
+    private BigDecimal marge;
     @Size(max = 1000)
     @NotNull
-    private final BigDecimal price;
+    private BigDecimal price;
     @NotNull
     @Size(max = 25)
-    private final BigDecimal weight;
+    private BigDecimal weight;
 
     @Builder
     public ProductDTO(Long id,

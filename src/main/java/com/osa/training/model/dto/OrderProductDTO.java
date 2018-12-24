@@ -12,9 +12,9 @@ import javax.validation.constraints.NotNull;
 public class OrderProductDTO extends AbstractDTO {
 
     @NotNull
-    private final Integer amount;
+    private Integer amount;
     @NotNull
-    private final ProductDTO product;
+    private ProductDTO product;
 
     @Builder
     public OrderProductDTO(Long id,
