@@ -21,7 +21,7 @@ public class PurchaseDTO extends AbstractDTO {
 
     @Builder
     public PurchaseDTO(Long id,
-                       int version,
+                       Long version,
                        LocalDateTime createDate,
                        LocalDateTime updateDate,
                        @NotNull Status status,

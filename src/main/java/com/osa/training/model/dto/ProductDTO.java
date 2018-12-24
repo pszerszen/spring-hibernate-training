@@ -27,7 +27,7 @@ public class ProductDTO extends AbstractDTO {
 
     @Builder
     public ProductDTO(Long id,
-                      int version,
+                      Long version,
                       LocalDateTime createDate,
                       LocalDateTime updateDate,
                       @NotNull String name,

@@ -27,7 +27,7 @@ public class CustomerDTO extends AbstractDTO {
 
     @Builder
     public CustomerDTO(Long id,
-                       int version,
+                       Long version,
                        LocalDateTime createDate,
                        LocalDateTime updateDate,
                        @NotNull String firstName,

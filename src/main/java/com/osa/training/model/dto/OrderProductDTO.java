@@ -18,7 +18,7 @@ public class OrderProductDTO extends AbstractDTO {
 
     @Builder
     public OrderProductDTO(Long id,
-                           int version,
+                           Long version,
                            LocalDateTime createDate,
                            LocalDateTime updateDate,
                            @NotNull Integer amount,
